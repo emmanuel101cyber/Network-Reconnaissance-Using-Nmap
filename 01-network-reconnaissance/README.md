@@ -52,3 +52,24 @@ Testing was conducted against Nmap's designated test server, `scanme.nmap.org`, 
 The screenshot below shows the actual Nmap scan performed during this project.
 
 ![Nmap Scan Results](nmap-scan-result.png)
+
+ Security Findings and Recommendations
+
+   Findings
+
+* Port 22 (SSH):Open. This port is commonly used for secure remote administration.
+* Port 80 (HTTP):Open. This port is commonly used for web traffic that is not encrypted by HTTP itself.
+* Other scanned TCP ports:98 ports were reported as closed.
+
+   Recommendations
+
+* SSH:Restrict access to trusted sources where appropriate, use strong authentication, and keep the SSH service updated.
+* HTTP:Where applicable, configure HTTPS to encrypt web traffic and protect information in transit.
+* Port management:Close unnecessary services and limit network exposure based on operational requirements.
+
+   Limitations
+
+This was a basic Nmap scan. It identified port states and associated service names but did not establish whether the services contain vulnerabilities. Further authorized assessment would be required.
+
+The recommendations are general security guidance, not confirmation that the target server is vulnerable.
+
