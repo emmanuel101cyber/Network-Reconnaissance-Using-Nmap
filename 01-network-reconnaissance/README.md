@@ -47,3 +47,8 @@ The scan identified two open ports associated with SSH and HTTP. Open ports do n
 
 Testing was conducted against Nmap's designated test server, `scanme.nmap.org`, within its published usage restrictions. No exploitation or unauthorized access was attempted.
 
+ Screenshot Evidence
+
+The screenshot below shows the actual Nmap scan performed during this project.
+
+![Nmap Scan Results](nmap-scan-result.png)
